@@ -3,9 +3,8 @@
  * @Email wb846022604@gamil.com
  * @LastAuthor wangbo
  * @CreatedTime 2020-11-21 15:51:51
- * @LastModifyTime 2020-11-21 21:22:23
+ * @LastModifyTime 2020-11-23 17:28:50
  */
-// #!/usr/bin/env node
 // --这种用法是为了防止操作系统用户没有将node装在默认的/usr/bin路径里。当系统看到这一行的时候，
 // 首先会到env设置里查找node的安装路径，再调用对应路径下的解释器程序完成操作。
 const program = require("commander")

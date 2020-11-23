@@ -1,8 +1,7 @@
 {
   "name": "wlw-cli",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "前端脚手架工具",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,11 +9,11 @@
     "vue、cli"
   ],
   "bin": {
-    "wlw-cli": "./cli.js"
+    "wlw-cli": "bin/wlw.cli.js"
   },
   "author": "hanwei",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^4.1.0",
     "cli-table": "^0.3.1",
     "commander": "^6.2.0",
