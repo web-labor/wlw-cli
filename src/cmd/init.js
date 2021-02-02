@@ -23,6 +23,10 @@ module.exports = (name) => {
   inquirer
     .prompt([
       {
+        name: 'zh_name',
+        message: '项目中文名称'
+      },
+      {
         name: 'description',
         message: '项目描述'
       },
@@ -50,15 +54,16 @@ module.exports = (name) => {
             spinner.succeed()
             const meta = {
               name,
+              zh_name: answers.zh_name,
               description: answers.description,
               author: answers.author
             }
             const fileName = `${name}/package.json`
             if (fs.existsSync(fileName)) {
-              const content = fs.readFileSync(fileName).toString()
+              let content = JSON.parse(fs.readFileSync(fileName).toString())
               // 替换package.json模版参数
-              const result = handlebars.compile(content)(meta)
-              fs.writeFileSync(fileName, result)
+              content = Object.assign(content, meta)
+              fs.writeFileSync(fileName, JSON.stringify(content, '', '\t'))
             }
             console.log(symbols.success, chalk.green('项目初始化完成'))
           } else {

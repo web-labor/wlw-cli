@@ -12,5 +12,11 @@ module.exports = [
     name: 'web-model',
     desc: 'web vue-template',
     git: "https://github.com:web-labor/web-model#main"
+  },
+  {
+    value: 'mobile-model',
+    name: 'mobile-model',
+    desc: 'mobile vue-template',
+    git: "https://github.com:web-labor/mobile-model#main"
   }
 ]
