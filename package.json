@@ -1,6 +1,6 @@
 {
   "name": "wlw-cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "前端脚手架工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
     "handlebars": "^4.7.6",
     "inquirer": "^7.3.3",
     "log-symbols": "^4.0.0",
-    "ora": "^5.1.0"
+    "ora": "^5.1.0",
+    "axios": "^0.17.1"
   }
 }
