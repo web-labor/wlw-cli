@@ -25,7 +25,7 @@ async function requestPackageInfo () {
         // 当前版本号
         let curVersion = require('../../package.json').version
         if (lastVersion > curVersion) {
-          console.log(chalk.yellow('有新的版本更新，您可以通过 `npm update -g wlw-cli` 命令更新版本!'))
+          console.log(chalk.yellow('有新的版本更新，您可以通过 `npm update -g wlw-cli` 或者 `npm install wlw-cli@latest -g` 命令更新版本!'))
         } else {
           console.log(chalk.green(`wlw-cli当前版本: ${curVersion}`))
         }
